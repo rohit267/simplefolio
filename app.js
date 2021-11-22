@@ -5,7 +5,5 @@ const path = require("path");
 
 app.use(express.static('dist', { maxAge: 604800000 }));
 
-app.use(setCache)
-
 app.get('/', (req, res) => res.sendFile(path.resolve([__dirname, "dist", "index.html"])));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
