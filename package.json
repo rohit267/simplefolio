@@ -5,8 +5,9 @@
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "parcel",
+    "build": "parcel build",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
