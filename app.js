@@ -5,5 +5,10 @@ const path = require("path");
 
 app.use(express.static("dist", { maxAge: 604800000 }));
 
-app.get("/", (req, res) => res.sendFile(path.join(__dirname, "dist", "index.html")));
-app.listen(port, () => console.log(`Portfolio app listening on port ${port}!`));
+app.get("/", (req, res) =>
+  res.sendFile(path.join(__dirname, "dist", "index.html"))
+);
+app.listen(port, () => {
+  console.log("Serving", path.join(__dirname, "dist", "index.html"));
+  console.log(`Portfolio app listening on port ${port}!`);
+});

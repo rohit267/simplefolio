@@ -2,7 +2,7 @@ FROM node:16-alpine
 
 WORKDIR /app
 
-COPY dist/ .
+COPY dist/ ./dist/
 COPY app.js .
 COPY package.json .
 
